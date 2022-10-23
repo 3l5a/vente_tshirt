@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vente de t-shirts</title>
+    <style>
+      .name {
+        text-transform: uppercase;
+      }
+
+      .surname {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><i>Client</i></legend>
+        <div>
+          <label for="nomprenom">Nom et prénom :</label>
+          <input
+            type="text"
+            name=""
+            id="nomprenom"
+            placeholder="NOM et Prénom"
+            pattern="^([A-Z]+)\s([A-Z]{1}[a-z]+)$"
+          />
+        </div>
+        <div>
+          <label for="adresse">Adresse :</label>
+          <input type="text" name="adresse" id="adresse"  />
+        </div>
+        <div>
+          <label for="cp">Code postal :</label>
+          <input
+            type="text"
+            name="code_postal"
+            id="cp"
+            pattern="^[0-9]{5}"
+            max="5"
+            size="5"
+          />
+        </div>
+        <div>
+          <label for="pays">Pays :</label>
+          <input type="text" name="pays" id="pays" value="France" readonly />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><i>Commande</i></legend>
+        <div>
+          <label for="modele">Modèle :</label>
+          <input type="text" name="" id="modele" value="Road 66" />
+        </div>
+        <div>
+          <label for="taille">Taille :</label> <br />
+          <input type="range" name="" id="taille" value="4" /><br />S M L XL
+        </div>
+        <div>
+          <label for="quantite">Quantité</label>
+          <input
+            type="number"
+            name=""
+            id="quantite"
+            value="1"
+            max="165"
+            step="3"
+            min="1"
+          />
+        </div>
+      </fieldset>
+      <input type="submit" name="" id="" value="Commander" />
+      <input type="reset" name="" id="" value="Recommencer" />
+    </form>
+  </body>
+</html>
